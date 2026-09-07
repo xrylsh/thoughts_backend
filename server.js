@@ -44,16 +44,11 @@ if (!fs.existsSync(databaseFile)) {
 
 app.get("/", function(req, res) {
 
-    res.sendFile(
-        path.join(
-            __dirname,
-            "..",
-            "index.html"
-        )
-    );
+    res.json({
+        message: "UNSAID backend is running! 💭"
+    });
 
 });
-
 
 // =====================================
 // SAVE THOUGHT
